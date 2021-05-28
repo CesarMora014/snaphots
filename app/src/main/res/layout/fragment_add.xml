@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/spacing_default"
+    tools:context=".AddFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="?android:progressBarStyleHorizontal"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:layout_marginTop="@dimen/spacing_min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar"/>
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/post_message_title"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/btn_post"
+        app:layout_constraintTop_toTopOf="@id/btn_post"
+        app:layout_constraintBottom_toBottomOf="@id/btn_post"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Título de la instantanea"
+        android:layout_marginTop="@dimen/spacing_min"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_post"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/img_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_min"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_title"
+        app:layout_constraintDimensionRatio="H, 4:3"/>
+
+
+    <ImageButton
+        android:id="@+id/ib_select"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_image_search"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="@id/img_photo"
+        app:layout_constraintEnd_toEndOf="@id/img_photo"
+        app:layout_constraintTop_toTopOf="@id/img_photo"
+        app:layout_constraintBottom_toBottomOf="@id/img_photo"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

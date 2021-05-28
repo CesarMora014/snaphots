@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365578274819",
+    "project_id": "snapshots-e165d",
+    "storage_bucket": "snapshots-e165d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365578274819:android:532a1221d7125d34996636",
+        "android_client_info": {
+          "package_name": "com.mora.snapshots"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365578274819-lfkbt1dfmr5i5fj9fff4gr587ab3bqt4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmF43-GzLIUjNEws0FyCNOeuqrSLM4emI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365578274819-lfkbt1dfmr5i5fj9fff4gr587ab3bqt4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
